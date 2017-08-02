@@ -49,7 +49,7 @@
     "gulp": "^3.6.0",
     "gulp-coveralls": "^0.1.0",
     "gulp-documentation": "^2.2.0",
-    "gulp-eslint": "^3.0.0",
+    "gulp-eslint": "^4.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
     "gulp-gitmodified": "^1.1.0",
     "gulp-if": "^2.0.2",
@@ -72,6 +72,7 @@
     "node": ">=6.11"
   },
   "scripts": {
+    "lint": "gulp lint",
     "prepublish": "gulp prepublish",
     "test": "gulp",
     "json-server": "./node_modules/json-server/bin/index.js test/data/rest/db.json -p 8010 --watch -m test/data/rest/headers.js"

@@ -39,6 +39,14 @@ gulp.task('docs', function () {
   });
 });
 
+
+gulp.task('lint', function () {
+  return gulp.src('lib/**/*.js')
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
+});
+
 gulp.task('static', function () {
   return gulp.src('lib/**/*.js')
     // .pipe(gitmodified(['added', 'modified']))
